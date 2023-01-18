@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // the following 4 functions are all from Odin Project
+        // Javascript Fundamentals section 3
+        function add7(num) {
+            return num + 7
+        }
+
+        function multiply(op1, op2) {
+            return op1 * op2
+        }
+
+        function capitalize(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1)
+        }
+
+        function lastLetter(str) {
+            return str.charAt(str.length - 1)
+        }
+    </script>
+<!-- Javascript Fundamentals Problem Solving --> 
+    <!-- 
+        <button onclick="prompt()">Click here for FizzBuzz</button> 
+    -->
+    <script>
+        let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz to", "10"))
+
+        for (let i = 1; i <= answer; i++) {
+            if ( i % 3 == 0 && i % 5 == 0) {
+                console.log("FizzBuzz")
+            }
+            else if ( i % 3 == 0) {
+                console.log("Fizz")
+            }
+            else if (i % 5 == 0) {
+                console.log('Buzz')
+            }
+            else {
+                console.log(i.toString())
+            }
+        }
+    </script>
+</body>
+</html>
