@@ -35,3 +35,28 @@ const btn2 = document.querySelector("#btn2");
 btn2.addEventListener('click', () => {
     alert("Hello World Again!!");
 });
+
+// alert function for our buttons
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+}
+
+const btn3 = document.querySelector("#btn3")
+
+// method 2 of clicking button
+btn3.onclick = alertFunction; 
+
+// method 3 of clicking button
+btn3.addEventListener('click', alertFunction);
+
+// buttons is a node list. It looks and acts much like an array.
+const buttons = document.querySelectorAll('button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
