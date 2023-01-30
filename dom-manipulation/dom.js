@@ -16,7 +16,6 @@ container.appendChild(h3_1);
 // div with elements inside
 const div1 = document.createElement('div'); 
 div1.style.borderColor = "black"; 
-//document.body.appendChild(div1);
 
 const h1_1 = document.createElement('h1'); 
 h1_1.textContent = "I'm in a div";
@@ -26,6 +25,13 @@ const p2 = document.createElement('p');
 p2.textContent = "ME TOO!"; 
 div1.appendChild(p2); 
 
+// addition of div with all elements to container
 container.appendChild(div1);
 
+const btn1 = document.querySelector("#btn1")
+btn1.onclick = () => alert("Hello World");
 
+const btn2 = document.querySelector("#btn2"); 
+btn2.addEventListener('click', () => {
+    alert("Hello World Again!!");
+});
